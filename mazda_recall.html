@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+        <title>Mazda Recall Information Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="https://www.mazdausa.com/favicon.ico"/>
+  <!-- Stylesheets -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <!-- HEADER-NAV  -->
+  <a href="#" id="returnTop"></a>
+  <nav class="nav-wrapper text-uppercase">
+    <div class="container-fluid">
+      <div class="row header">
+
+        <div class="col-3 col-md-2">
+          <a href="#returnTop"><img class="header-image-logo img-fluid" src="img/mazda-logo.png" alt="Mazda" /></a>
+        </div>
+         <div class="col-9 col-md-10 text-right pull-right">
+		 <div class="hamburgerMenu">
+             <span class="menuText">Menu</span>&nbsp;<i class="fa fa-bars"></i>
+             </div>
+         <div class="menuContents">
+          <h3 class="header-title"><a class="mobileClick" href="#dealer"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;[Suburban Mazda of Troy]</a></h3>
+          <a class="mazda-btn btn-ltGray" href="#returnTop">Schedule Service</a>
+          <ul class="header-list">
+            <li class="header-list-item"><a href="#recallInfo">Takata Recall Info</a></li>
+            <li class="header-list-item"><a href="#faqs">Takata FAQs</a></li>
+			<li class="header-list-item rapClick"><a href="#rap">Takata Action Plan</a></li>
+            <li class="header-list-item"><a href="#dealer">Authorized Dealer</a></li>
+            <li class="header-list-item"><a href="#">Espa&ntilde;ol</a></li>
+			<li class="header-list-item"><a href="#">中文</a></li>
+          </ul>
+         </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END HEADER-NAV -->
+  
+  <!-- MOBILE-NAV  -->
+      <div class="container-fluid mobileMenu">
+      <div class="row header">
+         <div class="col-12">
+          <h3 class="header-title"><a class="mobileClick dealerLoc" href="#dealer"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;[Suburban Mazda of Troy]</a></h3>
+          <a class="mobileClick mazda-btn btn-black" href="#">Schedule Service</a>
+          <ul class="header-list">
+            <li class="header-list-item"><a class="mobileClick" href="#recallInfo">Takata Recall Info</a></li>
+            <li class="header-list-item"><a class="mobileClick" href="#faqs">Takata FAQs</a></li>
+			<li class="header-list-item rapClick"><a class="mobileClick" href="#rap">Takata Action Plan</a></li>
+            <li class="header-list-item"><a class="mobileClick" href="#dealer">Authorized Dealer</a></li>
+            <li class="header-list-item"><a class="mobileClick" href="mazda_recall-sp.html">Espa&ntilde;ol</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>   
+    <!-- MOBILE-NAV  -->
+
+  <!-- HERO  -->
+    <header class="masthead">
+      <div class="container-fluid">
+        <div class="intro-text">
+          <h1 class="text-uppercase">Mazda Recall Information Center</h1>
+			<div id="Vin-Check-1"  class="Vin-Check-1">
+			   <div class="container-fluid">
+				<div class="row">
+				  <div class="col-12">
+					<h4 class="mb-2">Check Recalls by Vehicle Identification Number (VIN) or License Plate Number</h4>
+					<p>Enter your 17-digit VIN or your license plate number plus the state it was issued&nbsp;in.</p>
+					<p>If entering your VIN, you do not need to select a&nbsp;state.</p>
+					<a class="mazda-btn btn-scan" data-toggle="modal" href="#bVinScan"><i class="fa fa-camera"></i>&nbsp;&nbsp;Scan VIN</a>
+					<div class="vinLookupBlock">
+					<form name="vinForm1">
+					<input type="text" id="VINLookup1" class="VINLookup" placeholder="VIN or License Plate Number" />
+					<select class="recall-select">
+						<option selected="selected">Select State:</option>
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District Of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+					</select>
+						<a id="checkRecall1" class="mazda-btn btn-ltGray" href="#recallInfo">Check for Recalls</a>
+					</form>
+					<div id="error1"></div>
+					<a class="findVin" data-toggle="modal" href="#wherefindvin">Where do I find my VIN?</a>
+					</div>
+				  </div>
+				</div>
+			   </div>
+			  </div>
+        </div>
+      </div>
+    </header>
+  <!-- END HERO -->
+
+    <!-- VIN CHECK 2 START -->
+ <div id="Vin-Check-2" class="Vin-Check-2 hide">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>YOUR [2008 M3S RITV P] HAS [1] OPEN SAFETY RECALL[S].</h2>
+        <h3>VIN [JM1BK32G981113241]  |  UPDATED [12/04/17]</h3>
+        <a class="mazda-btn btn-black" href="#returnTop">Schedule Service</a>
+    <table>
+        <tr>
+            <th style="width:20%">Recall &amp; Date</th><th style="width:20%">NHTSA</th><th style="width:40%">Details</th><th style="width:20%">Status</th>
+        </tr>
+        <tr>
+            <td class="border" colspan="4"></td>
+        </tr>
+        <tr>
+            <td>
+            <p>[6010H | 08/19/13]</p>
+            </td>
+            <td>
+            <p>[#10V374000]</p>
+            </td>
+            <td>
+            <p>
+            [<strong>Recall:</strong> MAZDA3/5 POWER STEERING.
+            </p>
+            <p>
+            <strong>Safety Risk:</strong> Unless the driver compensates for the additional effort, the risk of a crash is increased.
+            </p>
+            <p>
+            <strong>Repair:</strong> The dealer will replace the power steering pump and lines, free of charge.]
+            </p>
+            </td>
+            <td>
+            <p>[Incomplete]</p>
+            </td>
+        </tr>
+    </table>
+    <div id="vinFaq">
+    <div class="question">How to understand recall search results&nbsp;<span class="plusMinus">+</span></div>
+    <div class="answer hide">
+                  <p><strong>Incomplete</strong> means your vehicle has not yet completed the repair. Please schedule an appointment with a Mazda dealer to have the repair completed <strong>free of charge</strong>.</p>
+                  <p><strong>Incomplete-Remedy Not Yet Available</strong> means parts are not yet available for the repair. Please wait until you receive a notification from Mazda to bring your vehicle to a dealer for the repair                  <strong>free of charge</strong>.</p>
+                  <p><strong>Closed</strong> means your vehicle has completed the repair.</p>
+     </div>
+
+    <div class="question">What is the difference between a Recall and Special Service Program (SSP)?&nbsp;<span class="plusMinus">+</span></div>
+    <div class="answer hide">
+                <p>
+                There are two forms of motor vehicle recalls: (1) emissions recalls, and (2) safety recalls. Automobile manufacturers and/or the U.S. Environmental Protection Agency (EPA) can initiate an emissions recall when a substantial number of a category of vehicles fails to meet the federal emissions standard. A safety recall involving a motor vehicle or an item of motor vehicle equipment can either be independently conducted by a manufacturer or ordered by the National Highway Traffic Safety Administration (NHTSA) in order to repair a safety-related defect or noncompliance with a federal motor vehicle safety standard. Mazda works continuously with both government agencies on recalls for Mazda vehicles. Mazda will not issue a recall as an SSP. Sometimes Mazda will implement a non-safety or a regulatory repair as an SSP.
+                </p>
+				<p>
+                Warranty Extension Special Service Programs (SSPs) are voluntary campaigns to improve customer satisfaction. Customers are contacted by mail, and customer participation is voluntary. Special Service Programs that have a Warranty Extension attached are not mandated recalls.
+                </p>
+     </div>
+     </div>
+     </div>
+    </div>
+  </div>
+  <div id="searchAnother">
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+    <h4>Search Another Vehicle</h4>
+        <a class="mazda-btn btn-scan" data-toggle="modal" href="#bVinScan"><i class="fa fa-camera"></i>&nbsp;&nbsp;Scan VIN</a>
+        <div class="vinLookupBlock">
+         <form name="vinForm2">
+        <input type="text" id="VINLookup2" class="VINLookup" placeholder="17-character VIN" />
+		<select class="recall-select">
+						<option selected="selected">Select State:</option>
+						<option value="AL">Alabama</option>
+						<option value="AK">Alaska</option>
+						<option value="AZ">Arizona</option>
+						<option value="AR">Arkansas</option>
+						<option value="CA">California</option>
+						<option value="CO">Colorado</option>
+						<option value="CT">Connecticut</option>
+						<option value="DE">Delaware</option>
+						<option value="DC">District Of Columbia</option>
+						<option value="FL">Florida</option>
+						<option value="GA">Georgia</option>
+						<option value="HI">Hawaii</option>
+						<option value="ID">Idaho</option>
+						<option value="IL">Illinois</option>
+						<option value="IN">Indiana</option>
+						<option value="IA">Iowa</option>
+						<option value="KS">Kansas</option>
+						<option value="KY">Kentucky</option>
+						<option value="LA">Louisiana</option>
+						<option value="ME">Maine</option>
+						<option value="MD">Maryland</option>
+						<option value="MA">Massachusetts</option>
+						<option value="MI">Michigan</option>
+						<option value="MN">Minnesota</option>
+						<option value="MS">Mississippi</option>
+						<option value="MO">Missouri</option>
+						<option value="MT">Montana</option>
+						<option value="NE">Nebraska</option>
+						<option value="NV">Nevada</option>
+						<option value="NH">New Hampshire</option>
+						<option value="NJ">New Jersey</option>
+						<option value="NM">New Mexico</option>
+						<option value="NY">New York</option>
+						<option value="NC">North Carolina</option>
+						<option value="ND">North Dakota</option>
+						<option value="OH">Ohio</option>
+						<option value="OK">Oklahoma</option>
+						<option value="OR">Oregon</option>
+						<option value="PA">Pennsylvania</option>
+						<option value="RI">Rhode Island</option>
+						<option value="SC">South Carolina</option>
+						<option value="SD">South Dakota</option>
+						<option value="TN">Tennessee</option>
+						<option value="TX">Texas</option>
+						<option value="UT">Utah</option>
+						<option value="VT">Vermont</option>
+						<option value="VA">Virginia</option>
+						<option value="WA">Washington</option>
+						<option value="WV">West Virginia</option>
+						<option value="WI">Wisconsin</option>
+						<option value="WY">Wyoming</option>
+					</select>	 
+		<a id="checkRecall2" class="mazda-btn btn-black" href="#recallInfo">Check for Recalls</a>
+        </form>
+        <div id="error2"></div>
+        <a class="findVin" data-toggle="modal" href="#wherefindvin">Where do I find my VIN?</a>
+        </div>
+  </div>
+   </div>
+  </div>
+ </div>
+</div>
+  <!-- VIN CHECK 2 END -->
+	
+<!-- MF VIDEO -->
+	
+<div id="vidBkgd">
+  <div class="container-fluid">
+    <div class="row">
+      <div id="airbagVideo" class="col-lg-12">
+        <a data-toggle="modal" href="#videoModal">
+      </a>
+		  <div class="col-12 col-sm-5">&nbsp;</div>
+		  <div class="col-12 col-sm-7 pleaseWatch">
+			<div class="watchGroup">
+				<h2>Please watch this important announcement about the<br class="fullscreen" /> Takata Airbag Safety&nbsp;Recall</h2>
+				 <a class="watchNow" data-toggle="modal" href="#videoModal"><div class="oneEighty">&#9665;</div>&nbsp;&nbsp;Watch Now</a>
+			</div>
+		   </div>
+      </div>
+    </div>
+  </div>
+</div>
+	
+<!-- MF VIDEO END -->
+	
+<!-- Safety Matters -->
+<div id="safetyMattersWrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div id="safetyMatters" class="col-xl-12">
+            <div class="col-lg-8 col-md-7 col-12 drivingMatters">
+				<a class="anchor" id="smAnchor"></a>
+				<h2>PROTECT WHAT'S IMPORTANT TO YOU.</h2>
+                <p>
+					If your vehicle is affected by a recall, please <a class="textLink" href="#">schedule an appointment</a> to have your vehicle repaired by an authorized Mazda dealer as soon as possible.
+				</p>
+				<p>
+					Your safety is very important to Mazda and it is our mission to actively communicate all information related to the Takata airbag safety recall to our customers. Click the link below for a list of the actions we are currently taking.
+				</p>
+				<a id="" class="mazda-btn btn-black rapClick" href="#rap">VIEW THE MAZDA TAKATA RECALL ACTION PLAN</a>
+            </div>
+            <div class="col-lg-4 col-md-5 col-12 affectedVehicles">
+            <h3>Affected Vehicles</h3>
+            <table>
+                <tr>
+                    <th>
+                    Model
+                    </th>
+                    <th>
+                    Model Year(s)
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                    B-Series
+                    </td>
+                    <td>
+                    2004 &ndash; 2009
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Mazda6
+                    </td>
+                    <td>
+                    2003 &ndash; 2012
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                    MazdaSpeed6
+                    </td>
+                    <td>
+                    2006 &ndash; 2007
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    MPV
+                    </td>
+                    <td>
+                    2004 &ndash; 2006
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    RX-8
+                    </td>
+                    <td>
+                    2004 &ndash; 2011
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    CX-7
+                    </td>
+                    <td>
+                    2007 &ndash; 2012
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    CX-9
+                    </td>
+                    <td>
+                    2007 &ndash; 2012
+                    </td>
+                </tr>
+            </table>
+
+            </div>
+      </div>
+	  <div id="recallActionPlan" class="col-xl-12 rapToggle">
+		<div class="container-fluid">
+        <div class="row">
+		<div class="col-9">
+		<a class="anchor" id="rap"></a>
+	  	<h2>MAZDA TAKATA RECALL ACTION PLAN</h2>
+		</div>
+		<div class="col-3"><a class="rapClick rapClose" href="#smAnchor">Close&nbsp;&nbsp;&times;</a></div>
+
+		  <table class="" style="border: 0px; font-size: 14px;"><thead class=""><tr class=""><th class="">&nbsp;</th><th class="">&nbsp;</th><th class="">&nbsp;</th></tr><tr class=""><th class=""><span>OWNERS PROGRAMS</span></th><th class="">&nbsp;</th><th class=""><span>TIMELINE</span></th></tr><tr class=""><th class="">&nbsp;</th><th class="">&nbsp;</th><th class="">&nbsp;</th></tr></thead><tbody class=""><tr class=""><td class=""><span>• Online Customer Appointment Scheduler</span></td><td class="">&nbsp;</td><td class=""><span>January 2016 - Current</span></td></tr><tr class=""><td class=""><span>• Takata-trained Customer Call Center</span></td><td class="">&nbsp;</td><td class=""><span>February 2016 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• “Too Far from Dealer” Escalations</span></td><td class="">&nbsp;</td><td class=""><span>June 2017 - Current</span></td></tr><tr class=""><td class=""><span>• Mazda Recall Websites</span></td><td class="">&nbsp;</td><td class=""><span>April 2016 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• MazdaRecallInfo.com</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• MazdaSeguridad.com</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• MazdaUSA.com</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class=""><span>• Owner Outreach Efforts</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Letters/postcards/mailers</span></td><td class="">&nbsp;</td><td class=""><span>June 2013 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Phone calls/voicemails</span></td><td class="">&nbsp;</td><td class=""><span>December 2016 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Emails</span></td><td class="">&nbsp;</td><td class=""><span>September 2017 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Social media</span></td><td class="">&nbsp;</td><td class=""><span>April 2016 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Door to door in person home visits</span></td><td class="">&nbsp;</td><td class=""><span>January 2018 - Current</span></td></tr><tr class=""><td class=""><span>• Public Awareness/Education</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• At public events</span></td><td class="">&nbsp;</td><td class=""><span>May 2017 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Press conferences</span></td><td class="">&nbsp;</td><td class=""><span>June 2016 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Flyers/Message cards</span></td><td class="">&nbsp;</td><td class=""><span>May 2017 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Motorsports Events</span></td><td class="">&nbsp;</td><td class=""><span>November 2016 - Current</span></td></tr><tr class=""><td class=""><span>• Community Efforts</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Church events</span></td><td class="">&nbsp;</td><td class=""><span>May 2017</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Scouts of America</span></td><td class="">&nbsp;</td><td class=""><span>May 2017</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• YMCA</span></td><td class="">&nbsp;</td><td class=""><span>May 2017</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Community Events</span></td><td class="">&nbsp;</td><td class=""><span>May 2017 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Local Police Departments</span></td><td class="">&nbsp;</td><td class=""><span>September 2017</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Local Charity Organizations</span></td><td class="">&nbsp;</td><td class=""><span>October 2017 -  Current</span></td></tr></tbody><tr class=""><th class="">&nbsp;</th><th class="">&nbsp;</th><th class="">&nbsp;</th></tr><thead class=""><tr class=""><th class=""><span>DEALER PREPAREDNESS</span></th><th class="">&nbsp;</th><th class="">&nbsp;</th></tr><tr class=""><th class="">&nbsp;</th><th class="">&nbsp;</th><th class="">&nbsp;</th></tr></thead><tbody class=""><tr class=""><td class=""><span>• Adequate parts supply</span></td><td class="">&nbsp;</td><td class=""><span>November 2016 - Current</span></td></tr><tr class=""><td class=""><span>• Employee education</span></td><td class="">&nbsp;</td><td class=""><span>April 2017 - Current</span></td></tr><tr class=""><td class=""><span>• Free towing for Do Not Drive vehicles</span></td><td class="">&nbsp;</td><td class=""><span>January 2018</span></td></tr><tr class=""><td class=""><span>• Mobile repair</span></td><td class="">&nbsp;</td><td class=""><span>November 2016 - Current</span></td></tr><tr class=""><td class=""><span>• Expanded Service hours</span></td><td class="">&nbsp;</td><td class=""><span>April 2017 - Current</span></td></tr><tr class=""><td class=""><span>• Courtesy shuttle/Loaner vehicle</span></td><td class="">&nbsp;</td><td class=""><span>March 2016 - Current</span></td></tr><tr class=""><td class=""><span>• Dealer website recall link</span></td><td class="">&nbsp;</td><td class=""><span>November 2016 - Current</span></td></tr><tr class=""><td class=""><span>• Recall check for all Service customers</span></td><td class="">&nbsp;</td><td class=""><span>January 2017 - Current</span></td></tr><tr class=""><td class=""><span>• Takata video for dealer TV screens</span></td><td class="">&nbsp;</td><td class=""><span>October 2017 - Current</span></td></tr></tbody><tr class=""><th class="">&nbsp;</th><th class="">&nbsp;</th><th class="">&nbsp;</th></tr><thead class=""><tr class=""><th class=""><span>MAZDA EMPLOYEE PROGRAMS</span></th><th class="">&nbsp;</th><th class="">&nbsp;</th></tr><tr class=""><th class="">&nbsp;</th><th class="">&nbsp;</th><th class="">&nbsp;</th></tr></thead><tbody class=""><tr class=""><td class=""><span>• Corporate/Region/Field employee education</span></td><td class="">&nbsp;</td><td class=""><span>May 2017 - Current</span></td></tr></tbody><tr class=""><th class="">&nbsp;</th><th class="">&nbsp;</th><th class="">&nbsp;</th></tr><thead class=""><tr class=""><th class=""><span>ADDITIONAL EFFORTS</span></th><th class="">&nbsp;</th><th class="">&nbsp;</th></tr><tr class=""><th class="">&nbsp;</th><th class="">&nbsp;</th><th class="">&nbsp;</th></tr></thead><tbody class=""><tr class=""><td class=""><span>• Auction yard repairs</span></td><td class="">&nbsp;</td><td class=""><span>October 2017 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Expanding program to add 2 – 3 additional auction houses in 2018</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class=""><span>• Auto insurance company outreach</span></td><td class="">&nbsp;</td><td class=""><span>May 2017 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Email/Letter</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class=""><span>• Auto finance company owner outreach</span></td><td class="">&nbsp;</td><td class=""><span>March 2017 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Website messaging</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Billing insert</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class=""><span>• Used vehicle sales websites</span></td><td class="">&nbsp;</td><td class=""><span>July 2016 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Scan, identify, and perform outreach</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class=""><span>• Independent service shops/collision repair facilities</span></td><td class="">&nbsp;</td><td class=""><span>May 2017 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Identify affected vehicles</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Communicate to owners</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class=""><span>• Community Organizations Partnership</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class=""><span>• Auto Enthusiasts Publications education and owner outreach</span></td><td class="">&nbsp;</td><td class=""><span>June 2016</span></td></tr><tr class=""><td class=""><span>• Press conferences</span></td><td class="">&nbsp;</td><td class=""><span>June 2016 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Educate and inform</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class=""><span>• Used parts sales</span></td><td class="">&nbsp;</td><td class=""><span>May 2017 - Current</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• Identify faulty airbags and remove from market</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class=""><span>• DMV Education Efforts</span></td><td class="">&nbsp;</td><td class=""><span>May 2017 - Current</span></td></tr><tr class=""><td class=""><span>• DMV Education Efforts</span></td><td class="">&nbsp;</td><td class=""><span>July 2018</span></td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• DMV Education Efforts</span></td><td class="">&nbsp;</td><td class="">&nbsp;</td></tr><tr class=""><td class="" style="padding-left: 40px;"><span>• U.S. Military Base Recall Awareness</span></td><td class="">&nbsp;</td><td class=""><span>2018</span></td></tr></tbody></table>
+	  </div>
+     </div>
+	</div>
+   </div>
+  </div>
+</div>
+  <!-- Safety Matters END -->
+
+  <!-- FAQs -->
+  <div id="faqWrapper">
+	  <div class="container-fluid">
+		<div class="row">
+		  <div id="airbagFAQs" class="col-lg-12">
+		  <a class="anchor" href="#" id="faqs"></a>
+		  <h2>Takata Air Bag Inflator FAQs</h2>
+				<div class="col-sm-7 faqCategories">
+					<div class="abFaq faqPlus" option="1"><a href="#ri">Recall Information</a></div>
+					<div class="abFaq faqPlus" option="2"><a href="#ar">About the Recall</a></div>
+					<div class="abFaq faqPlus" option="3"><a href="#vr">Vehicle Repair</a></div>
+					<div class="abFaq faqPlus" option="4"><a href="#pa">Parts Availability</a></div>
+					<div class="abFaq faqPlus" option="5"><a href="#cn">Customer Notification</a></div>
+					<div class="abFaq faqPlus" option="6"><a href="#mi">More Information</a></div>
+				</div>
+		  </div>
+		</div>
+	  </div>
+	  <!-- FAQs END -->
+	<div id="faqPanels">
+	  <!-- RECALL INFO -->
+	  <div id="RECALL-INFO" class="container-fluid options option-1" style="display: none;">
+		<div class="row">
+		  <div class="col-lg-12">
+		  <a class="anchor" id="ri"></a>
+		  <h4 class="faqPanel"><a class="faqPanel" href="#faqs">Recall Information&nbsp;<span class="plusMinus">-</span></a></h4>
+		  <p>
+		  In certain vehicles with continued exposure to high levels of humidity over long periods, the driver and/or front passenger air bag inflator supplied by Takata could produce excessive internal pressure in the event of a crash where the front air bag is designed to deploy. The excessive internal pressure may cause the inflator housing to rupture with metal fragments, which may increase the risk of injury to the vehicle occupants.
+	</p>
+	<p>
+	Should you determine that your vehicle is affected by this recall, Mazda encourages you to take immediate action to have your vehicle repaired — at no cost to you. Takata passenger frontal air bag inflator recalls have been expanded for Mazda to include additional models and model years. Parts for newly added vehicles in the expanded recalls are not yet available.
+	</p>
+	<p>
+	Owners of affected vehicles will be notified by first-class mail.
+		  </p>
+		  <a class="faqPanel" href="#faqs">
+		  <div class="returnTop">
+		  <img src="img/topArrow.png" alt="top arrow" /><br />
+		  All FAQ Topics
+		  </div>
+		  </a>
+		  </div>
+		 </div>
+		</div>
+	  <!-- RECALL INFO END -->
+
+	  <!-- ABOUT RECALL -->
+	  <div id="ABOUT-RECALL" class="container-fluid options option-2" style="display: none;">
+		<div class="row">
+		  <div class="col-lg-12">
+		  <a class="anchor" href="#" id="ar"></a>
+		  <h4 class="faqPanel"><a class="faqPanel" href="#faqs">About The Recall&nbsp;<span class="plusMinus">-</span></a></h4>
+		  <div class="question">What is the issue?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide">
+					<p>
+					Over time and exposure to high absolute humidity/high temperatures, the driver and/or passenger air bags can explode with metal shrapnel in the event of a crash. This can cause serious injury or death to passengers.
+					</p>
+					</div>
+					<div class="question">Has Mazda had any accidents, injuries, or deaths reported as a result of this condition?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>Mazda is aware of several individuals who have been injured as a result of this condition in Mazda vehicles.</p></div>
+					<div class="question">I was in an accident and my air bag didn’t deploy; is this related to the recall?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>No. The criterion for the air bag deployment does not change. The air bags are designed to deploy in only certain types of collisions as explained in the Owner’s Manual.</p></div>
+					<div class="question">My air bag light is on; is this related to the recall?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>No, the air bag indicator light does not alert you of this condition. If your air bag indicator light comes on, please bring your vehicle to an authorized Mazda Dealer for diagnosis.</p></div>
+
+					<div class="question">I am afraid to drive my vehicle.&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>Based on independent investigations and NHTSA’s independent expert, NHTSA has concluded that the Takata air bags do not pose an unreasonable risk to safety until they reach a certain level of air bag chemical degradation. NHTSA and Takata are prioritizing the expanded inflator recalls based on when involved inflators are more likely to pose an unreasonable risk to safety, considering time, temperature, and environmental moisture, which depends on a vehicle’s location (see map below).</p></div>
+		  <a class="faqPanel" href="#faqs">
+		  <div class="returnTop">
+		  <img src="img/topArrow.png" alt="top arrow" /><br />
+		  All FAQ Topics
+		  </div>
+		  </a>
+		  </div>
+		 </div>
+		</div>
+	  <!-- ABOUT RECALL END -->
+
+		  <!-- VEHICLE REPAIR -->
+	  <div id="VEHICLE-REPAIR" class="container-fluid options option-3" style="display: none;">
+		<div class="row">
+		  <div class="col-lg-12">
+		  <a class="anchor" href="#" id="vr"></a>
+		  <h4 class="faqPanel"><a class="faqPanel" href="#faqs">Vehicle Repair&nbsp;<span class="plusMinus">-</span></a></h4>
+	<div class="question">What part of the air bag is being replaced?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>Only the air bag inflator is under recall, and the replacement part addresses the original safety concerns from the recall.</p></div>
+
+					<div class="question">How do I get my vehicle repaired? How much will the repair cost?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>A Mazda Dealer will replace the affected air bag inflator and remedy the issue <strong>free of charge</strong>. Please schedule an appointment with your nearest authorized Mazda Dealer for parts reservation and repair.</p></div>
+
+					<div class="question">My air bag has been repaired in the past; will I need to get it repaired again? Will Mazda reimburse me for this?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>If you had an interim air bag inflator installed under any Takata safety recall, you will need to bring your vehicle to an authorized Mazda Dealer for the permanent repair, which will be done <strong>free of charge</strong>. In order to ensure you have the latest air bag inflator installed, it is best to bring your vehicle to an authorized Mazda Dealer.</p></div>
+
+					<div class="question">I’ve heard of an airbag inflator from Autoliv or TRW, how is this different than a Takata airbag inflator?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>Autoliv and TRW parts use guanidine nitrate as the air bag inflator propellant material, whereas Takata inflators use phase-stabilized ammonium nitrate (“PSAN”).  The change to Autoliv and TRW inflator parts is a decision by Mazda to no longer use inflator parts based on phase-stabilized ammonium nitrate.</p></div>
+
+					<div class="question">Why did Mazda change from using the Takata airbag inflator to an airbag inflator manufactured by Autoliv or TRW?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>Mazda made the change to alternate suppliers Autoliv and TRW because Mazda decided that it would be best to stop using air bag inflators made from phase-stabilized ammonium nitrate (“PSAN”).</p></div>
+
+					<div class="question">Why are desiccated inflators not currently being recalled like the non-desiccated Takata inflators?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>Takata produced desiccated inflators are currently undergoing testing by various qualified engineering companies to determine whether they pose a risk to safety.  Results will be evaluated by NHTSA and a determination made by early 2020.  If testing results show there is a safety concern prior to this date, a determination will be made and appropriate actions taken in response.</p></div>
+
+					<div class="question">How do I schedule a repair appointment? How long will the repair take?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>We understand your time is valuable. Scheduling an appointment ahead of time with an authorized Mazda Dealer will allow an opportunity to reserve the necessary replacement part for your vehicle and help minimize your wait time and inconvenience. A new air bag inflator will take approximately one hour to install.</p></div>
+
+					<div class="question">Are parts currently available?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>Mazda is continuously working with the supplier to ensure that sufficient replacement parts are available for affected vehicles. Please use the VIN search function above to check your recall status:</p>
+					  <ul>
+					  <li>A “Recall Incomplete” status means a replacement part is available for your vehicle. Please schedule an appointment with an authorized Mazda Dealer for parts reservation and repair.
+					  </li>
+					  <li>A “Recall Incomplete Remedy Not Yet Available” status means a replacement part is not yet available for your vehicle, please continue to check back as well as look for further communications from Mazda concerning parts availability. You can also register on mazdarecallinfo.com to receive recall notices via email for your specific Mazda vehicle.
+					  </li>
+					  <li>A “Repair Completed” status means your recall has been completed. However, please continue to utilize the VIN search function above to keep current on recalls for your vehicle.
+					  </li>
+					  </ul>
+					</div>
+
+					<div class="question">How will the dealer repair the vehicle?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>Dealers will install a new frontal air bag inflator containing a desiccant material that helps limit moisture absorption by the inflator’s propellant material.</p></div>
+
+					<div class="question">I already had my air bag inflator replaced. Will I get another recall notice?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>If you had an interim air bag inflator repair performed, the new inflator will not experience air bag chemical degradation for at least six years (see air bag chemical degradation time by Zone below). Before that time, you will receive another notice by first class mail from Mazda to bring in your vehicle for the permanent repair inflator. In order to ensure you have the latest air bag inflator installed, please contact an authorized Mazda Dealer.</p></div>
+
+					<div class="question">I was in an accident and my air bag didn’t deploy. Could this be related?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>No. The criterion for air bag deployment does not change. As explained in the Owner’s Manual, the air bags are designed to deploy in only certain types of collisions.</p></div>
+
+					<div class="question">Does this apply to all the air bags in my vehicle?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>This recall applies only to certain driver and/or passenger frontal air bags on the affected vehicles.</p></div>
+
+					<div class="question">I already paid for air bag replacement on my vehicle. Will Mazda reimburse me for this?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>Since this concern is only present in the event of an air bag deployment, reimbursement for air bag replacement repairs will not be offered.</p></div>
+			  
+			        <div class="question">What is an “interim” or “like for like” repair and why should I bother having that repair performed?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>The data NHTSA has collected clearly points to the age of the inflator as being a critical factor in the likelihood of rupture. An older inflator is more likely to rupture than a newer version of the same inflator. “Interim” and “like for like” repairs replace the old inflator with a new version of the same inflator. These NHTSA approved interim repairs reduce the safety risk associated with the vehicle until a final remedy inflator can be produced and installed. All owners that have an interim repair will still be offered a <strong>FREE</strong> final repair inflator. It is important that owners complete both an interim repair and a final repair when notified that they can do so.</p></div>
+			  
+		  <a class="faqPanel" href="#faqs">
+		  <div class="returnTop">
+		  <img src="img/topArrow.png" alt="top arrow" /><br />
+		  All FAQ Topics
+		  </div>
+		  </a>
+		  </div>
+		 </div>
+		</div>
+	  <!-- VEHICLE REPAIR END -->
+
+		<!-- PARTS AVAILABILITY -->
+	  <div id="PARTS-AVAIL" class="container-fluid options option-4" style="display: none;">
+		<div class="row">
+		  <div class="col-lg-12">
+		  <a class="anchor" href="#" id="pa"></a>
+		  <h4 class="faqPanel"><a class="faqPanel" href="#faqs">Parts Availability&nbsp;<span class="plusMinus">-</span></a></h4>
+					<div class="questionFixed">My vehicle is affected by the Takata Airbag Inflator recall, are parts available for repair?&nbsp;</div>
+					<div class="answerFixed"><p>Please see the table below to find your Mazda vehicle and model year.</p><p>Note: This information is up to date as of March 2018. Please use the VIN search function at the top of the page for the most up to date information.</p>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						  <table class="partsavailabletable">
+							<tr>
+							  <th class="head" colspan="3">Mazda6</th>
+							</tr>
+							<tr><th class="subhead">Model Year</th><th class="subhead">Driver Air Bag Inflator</th><th class="subhead">Passenger Air Bag Inflator</th></tr>
+							<tr><td>2003</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2004</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2005</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2006</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2007</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2008</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2009</td><td>Not Affected</td><td>Yes, in Zone A &amp; B (See map below)</td></tr>
+							<tr><td>2010</td><td>Not Affected</td><td>Yes, in Zone A (See map below)</td></tr>
+							<tr><td>2011</td><td>Not Affected</td><td>Yes, in Zone A (See map below)</td></tr>
+							<tr><td>2012</td><td>Not Affected</td><td>Yes, in Zone A (See map below)</td></tr>
+							<tr><td>2013</td><td>Not Affected</td><td>Yes, in Zone A (See map below)</td></tr>
+						  </table>
+						</div>
+						<br><br>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						  <table class="partsavailabletable">
+							<tr>
+							  <th class="head" colspan="3">MAZDASPEED6</th>
+							</tr>
+							<tr><th class="subhead">Model Year</th><th class="subhead">Driver Air Bag Inflator</th><th class="subhead">Passenger Air Bag Inflator</th></tr>
+							<tr><td>2006</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2007</td><td>Yes</td><td>Yes</td></tr>
+						  </table>
+						</div>
+						<br><br>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						  <table class="partsavailabletable">
+							<tr>
+							  <th class="head" colspan="3">RX-8</th>
+							</tr>
+							<tr><th class="subhead">Model Year</th><th class="subhead">Driver Air Bag Inflator</th><th class="subhead">Passenger Air Bag Inflator</th></tr>
+							<tr><td>2003</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2004</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2005</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2006</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2007</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2008</td><td>Yes</td><td>Yes</td></tr>
+							<tr><td>2009</td><td>Not Affected</td><td>Yes</td></tr>
+							<tr><td>2010</td><td>Not Affected</td><td>Yes, in Zone A &amp; B (See map below)</td></tr>
+							<tr><td>2011</td><td>Not Affected</td><td>Yes, in Zone A (See map below)</td></tr>
+						  </table>
+						</div>
+						<br><br>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						  <table class="partsavailabletable">
+							<tr>
+							  <th class="head" colspan="3">MPV</th>
+							</tr>
+							<tr><th class="subhead">Model Year</th><th class="subhead">Driver Air Bag Inflator</th><th class="subhead">Passenger Air Bag Inflator</th></tr>
+							<tr><td>2004</td><td>Not Affected</td><td>Yes</td></tr>
+							<tr><td>2005</td><td>Not Affected</td><td>Yes</td></tr>
+							<tr><td>2006</td><td>Not Affected</td><td>Yes</td></tr>
+						  </table>
+						</div>
+						<br><br>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						  <table class="partsavailabletable">
+							<tr>
+							  <th class="head" colspan="3">CX-9</th>
+							</tr>
+							<tr><th class="subhead">Model Year</th><th class="subhead">Driver Air Bag Inflator</th><th class="subhead">Passenger Air Bag Inflator</th></tr>
+							<tr><td>2007</td><td>Not Affected</td><td>Yes</td></tr>
+							<tr><td>2008</td><td>Not Affected</td><td>Yes</td></tr>
+							<tr><td>2009</td><td>Not Affected</td><td>Yes, in Zone A &amp; B (See map below)</td></tr>
+							<tr><td>2010</td><td>Not Affected</td><td>Yes, in Zone A (See map below)</td></tr>
+							<tr><td>2011</td><td>Not Affected</td><td>Yes, in Zone A (See map below)</td></tr>
+							<tr><td>2012</td><td>Not Affected</td><td>Yes, in Zone A (See map below)</td></tr>
+							<tr><td>2013</td><td>Not Affected</td><td>Yes, in Zone A (See map below)</td></tr>
+						  </table>
+						</div>
+						<br><br>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						  <table class="partsavailabletable">
+							<tr>
+							  <th class="head" colspan="3">CX-7</th>
+							</tr>
+							<tr><th class="subhead">Model Year</th><th class="subhead">Driver Air Bag Inflator</th><th class="subhead">Passenger Air Bag Inflator</th></tr>
+							<tr><td>2007</td><td>Not Affected</td><td>Yes</td></tr>
+							<tr><td>2008</td><td>Not Affected</td><td>Yes</td></tr>
+							<tr><td>2009</td><td>Not Affected</td><td>Yes</td></tr>
+							<tr><td>2010</td><td>Not Affected</td><td>Yes, in Zone A &amp; B (See map below)</td></tr>
+							<tr><td>2011</td><td>Not Affected</td><td>Yes, in Zone A (See map below)</td></tr>
+							<tr><td>2012</td><td>Not Affected</td><td>Yes, in Zone A (See map below)</td></tr>
+						  </table>
+						</div>
+						<br><br>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						  <table class="partsavailabletable">
+							<tr>
+							  <th class="head" colspan="3">B-Series Truck</th>
+							</tr>
+							<tr><th class="subhead">Model Year</th><th class="subhead">Driver Air Bag Inflator</th><th class="subhead">Passenger Air Bag Inflator</th></tr>
+							<tr><td>2004</td><td>Yes</td><td>Yes, in Zone A (See map below)</td></tr>
+							<tr><td>2005</td><td>Yes</td><td>Yes, in Zone A (See map below)</td></tr>
+							<tr><td>2006</td><td>Yes</td><td>Yes, in Zone A (See map below)</td></tr>
+							<tr><td>2007</td><td>Not Affected</td><td><em>Parts Available Spring 2018</em></td></tr>
+							<tr><td>2008</td><td>Not Affected</td><td><em>Parts Available Spring 2018</em></td></tr>
+							<tr><td>2009</td><td>Not Affected</td><td><em>Parts Available Spring 2018</em></td></tr>
+						  </table>
+						</div>
+						<p>&nbsp;</p>
+						<div class="img-fluid"><img src="img/TakataRecallNotificationMap.png" class="img-fluid" alt="Takata Recall Notification Map"></div>
+					</div>
+		  <a class="faqPanel" href="#faqs">
+		  <div class="returnTop">
+		  <img src="img/topArrow.png" alt="top arrow" /><br />
+		  All FAQ Topics
+		  </div>
+		  </a>
+		   </div>
+		 </div>
+		</div>
+	  <!-- PARTS AVAILABILITY END -->
+
+		<!-- CUSTOMER NOTIFICATION -->
+	  <div id="CUSTOMER-NOTIFICATION" class="container-fluid options option-5" style="display: none;">
+		<div class="row">
+		  <div class="col-lg-12">
+		  <a class="anchor" href="#" id="cn"></a>
+		  <h4 class="faqPanel"><a class="faqPanel" href="#faqs">Customer Notification&nbsp;<span class="plusMinus">-</span></a></h4>
+	<div class="question">What actions has Mazda taken to communicate to affected customers?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide"><p>Your safety is very important to us and it is our mission to actively communicate all information related to the recall to our customers. If your vehicle is involved in any safety recall, a letter detailing the recall will be sent to you from Mazda by USPS First Class Mail.</p></div>
+
+					<div class="question">Is this Recall even more urgent in certain climates or locations?&nbsp;<span class="plusMinus">+</span></div>
+					<div class="answer hide">
+					 
+					  <div class="img-fluid"><img class="img-fluid" src="img/TakataRecallNotificationMap.png" alt="Takata Recall Notification Map"></div>
+					  <p><strong>Zone A</strong> - States with high temperature cycling and humidity (includes Puerto Rico, Guam, and Saipan). Time in service until significant propellant degradation may occur is projected at between 6-9 years.</p>
+					  <p><strong>Zone B</strong> - States that have moderate temperature cycling and humidity. Time in service until significant propellant degradation may occur is projected at between 10-15 years.</p>
+					  <p><strong>Zone C</strong> - States with lower temperature cycling and humidity. Time in service until significant propellant degradation may occur is projected at between 15-20 years.</p>
+					  <p><i>NHTSA has structured this expansion with 5 phases and 3 geographic zones, based on temperature and absolute humidity factors in each Zone, and analysis of expected rate of inflator degradation. Time, temperature, and humidity have been found by NHTSA and independent investigations to contribute to significant propellant degradation, which can lead to high risk of inflator rupture.</i></p>
+					</div>
+		  <a class="faqPanel" href="#faqs">
+		  <div class="returnTop">
+		  <img src="img/topArrow.png" alt="top arrow" /><br />
+		  All FAQ Topics
+		  </div>
+		  </a>       </div>
+		 </div>
+		</div>
+	  <!-- CUSTOMER NOTIFICATION END -->
+
+		  <!-- MORE INFO -->
+	  <div id="MORE-INFO" class="container-fluid options option-6" style="display: none;">
+		<div class="row">
+		  <div class="col-lg-12">
+		  <a class="anchor" href="#" id="mi"></a>
+		  <h4 class="faqPanel"><a class="faqPanel" href="#faqs">More Information&nbsp;<span class="plusMinus">-</span></a></h4>
+	<p>If you have any questions regarding this recall, our Customer Experience Center Representatives are here to help Monday-Friday, 5:00 a.m. to 6:00 p.m., Pacific Time; Saturday 7:00 a.m. to 3:00 p.m., Pacific Time.</p>
+					  <p><a target="_blank" href="https://mazda.custhelp.com/app/chat/chat_launch_us/request_source/8/chat_data/cV9pZD0y/_icf_1/US/incidents.c$locale/US">Start chat now</a></p>
+					  <p>If chat is currently unavailable, you may also contact us by <a target="_blank" href="https://www.mazdausa.com/MusaWeb/emailMazda.action">email</a> or call <a href="tel:+18002225500">(800) 222-5500</a>, option #6.</p>
+				  <p>More information regarding the recall can be obtained from the National Highway Traffic Safety Administration (NHTSA) by visiting <a target="_blank" href="https://www.nhtsa.gov/recalls">https://www.nhtsa.gov/recalls</a>. If Mazda or its dealers do not repair the defect free of charge and within a reasonable amount of time, you may notify NHTSA at 1200 New Jersey Ave., SE., Washington, DC 20590; or, call the toll-free Vehicle Safety Hotline at <a href="tel:+18883274236">1-888-327-4236</a> (TTY: <a href="tel:+18004249153">1-800-424-9153</a>).</p>
+		  <a class="faqPanel" href="#faqs">
+		  <div class="returnTop">
+		  <img src="img/topArrow.png" alt="top arrow" /><br />
+		  All FAQ Topics
+		  </div>
+		  </a>
+		  </div>
+		 </div>
+		</div>
+	  <!-- MORE INFO END -->
+	</div><!-- faqPanels END -->
+</div>
+	
+  <!-- DEALER INFO -->
+<div id="dealerInfo">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-lg-12">
+
+        <div id="authorizedDealer" class="col-sm-7">
+        <a class="anchor" href="#" id="dealer"></a>
+            <h2>Your Authorized Dealer</h2>
+        <a class="differentDealer" data-toggle="modal" href="#myModal">Select a Different Dealer</a>
+            <div class="dealerCol1">
+        <p class="dealerName"><strong>[Suburban Mazda of Troy]</strong></p>
+
+                <table>
+                    <tr>
+                        <td>
+                            <p>[1794 Maplelawn Dr.]</p>
+                            <p>[Troy, MI 48084]</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <p><a href="tel:+10000000000">[248-649-2300]</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <p><a href="#returnTop">Visit Website</a></p>
+                        </td>
+                    </tr>
+                 </table>
+
+             </div>
+            <div class="dealerCol2">
+				<p class="dealerName"><strong>Service Hours</strong></p>
+            <p>[Mon, Thu: 7:00 AM - 8:00 PM]</p>
+            <p>[Tue - Wed, Fri: 7:00 AM - 6:00 PM]</p>
+            <p>[Sat: 8:00 AM - 3:00 PM]</p>
+            <a class="mazda-btn btn-black" href="#returnTop">Schedule Service</a>
+             </div>
+
+        </div>
+
+        <div id="recallNotifications" class="col-sm-5">
+            <h2>Recall Notifications</h2>
+            <p>
+            Would you like to receive important recall notifications about your vehicle via email? If at any point you decide you no longer wish to receive recall updates, you will be able to unsubscribe from further notifications in the footer of the emails&nbsp;sent.
+            </p>
+            <a class="mazda-btn btn-black" data-toggle="modal" href="#modalRecallOptin">Subscribe</a>
+        </div>
+      <a href="#returnTop">
+      <div class="returnTop">
+      <img src="img/topArrow.png" alt="top arrow" /><br />
+      Back To Top
+      </div>
+      </a>
+      </div>
+
+    </div>
+  </div>
+ </div>
+  <!-- DEALER INFO END -->
+
+  <!-- FOOTER -->
+  <footer id="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+          <div class="footerLinkRow">
+            <ul>
+              <li><a class="footerlink" href="https://www.mazdausa.com" target="blank">MazdaUSA.com</a></li>
+              <li><a class="footerlink" href="https://www.mazdausa.com/site/terms-of-use" target="blank">Terms &amp; Conditions</a></li>
+              <li><a class="footerlink" href="https://www.mazdausa.com/site/privacy" target="blank">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="copyrightArea">
+          &copy;2018 Mazda North American Operations. All Rights reserved.
+          </div>
+          <div class="question">
+          Disclaimer&nbsp;<span class="plusMinus">+</span>
+          </div>
+          <div class="answer hide">
+          <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+</p>
+          </div>
+          </div>
+      </div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+
+<!-- MODALS START -->
+
+<!-- Modal Search -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel">Search for an authorized Mazda dealer</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <form action="#" onsubmit="fbSend('Dealer Search');ga('send', 'event', 'Dealer Search', 'click', '61556 - RalphThayerMazdaLivonia');return searchByZip('search')">
+                <div class="modal-body">
+                    Please enter your zip code to find a dealer.<br/>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="txtZip_Search" name="txtZip_Search" placeholder="Enter 5 digit zip code" maxlength="5">
+                        <span id="errSearch" style="position:relative;top:5px;left:10px;color:red;visibility:hidden;">No listings found for this Zip Code.  Please enter another Zip code.</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="mazda-btn btn-white" data-dismiss="modal">Close</button>&nbsp;&nbsp;
+                    <button class="mazda-btn btn-black" data-toggle="modal" onclick="dealerSearchConversion();">Search now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Search Results -->
+<div class="modal fade" id="myModalSearch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h4 class="modal-title" id="myModalSearchLabel">Search for an authorized Mazda dealer</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <form onsubmit="fbSend('Dealer Search');ga('send', 'event', 'Dealer Search', 'click', '61556 - RalphThayerMazdaLivonia');return searchByZip('searchAgain')">
+                <div class="modal-body">
+                    Please enter your zip code to find a dealer.<br/>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="txtZip_SearchAgain" name="txtZip_SearchAgain" maxlength="5">
+                        <span id="errSearchAgain" style="position:relative;top:5px;left:10px;color:red;visibility:hidden;">No listings found for this Zip Code.  Please enter another Zip code.</span>
+                    </div>
+                    <div id="dealerlist">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="mazda-btn btn-white" data-dismiss="modal">Close</button>&nbsp;&nbsp;
+                    <button class="mazda-btn btn-red" data-toggle="modal" onclick="dealerSearchConversion();">Search Again</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Vin -->
+<div class="modal fade" id="wherefindvin" tabindex="-1" role="dialog" aria-labelledby="mymodallabel" style="z-index: 1800;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h4 class="modal-title" id="mymodallabel">Where do I find my VIN?</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/modalvin.jpg" alt="Where do I find my VIN?" class="img-fluid">
+                <div>
+                    <p>Every vehicle has a unique 17-character Vehicle Identification Number (VIN) that contains information about that vehicle.<br><br>
+
+                    You can find your VIN:<br></p>
+                    <ul>
+						<li>On a sticker in the driver's side door jamb</li>
+                        <li>At the base of the windshield on the driver's side</li>
+                        <li>On your vehicle's registration</li>
+                        <li>On your insurance statement or proof-of-insurance card</li>
+                        <li>On your financial services statement</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                &nbsp;
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- VIN Scan Div -->
+<div class="modal fade" id="bVinScan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="z-index: 1600;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h5 class="modal-title">SCAN VIN</h5>
+                <button type="button" class="close" style="vertical-align: top;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>&nbsp;&nbsp;
+            </div>
+            <div class="modal-body">
+                <div>
+                    <img class="img-fluid" src="img/mazda_vin_scan_example.jpg" alt="Mazda VIN scan Example" />
+                </div>
+                <div style="padding: 0px 0 20px 0;">
+                    <h3>How to scan the VIN barcode</h3>
+                    <p style="display: block;">Scan the VIN barcode located on the <em>driver side door frame</em>.</p>
+                    <p style="display: block;">Center the barcode and fill up the entire screen width without cutting off any part of the code.</p>
+                    <p style="display: block;">It's best to hold the phone in "landscape" mode and use the flash if you have one.</p>
+                    <p style="display: block;">Once you've captured the image, tap "Use image" (iOS) or tap the blue checkmark (Android).</p>
+                </div>
+                <div style="display: block; position: absolute; text-align: center; width: 90%; padding-bottom: 5px;">
+                    <div style="display: inline; float:left;  display:inline; width: 10%; visibility: hidden;"><br/></div>
+                    <div style="display: inline; float:left; display:inline; width: 43%;">
+                        <form id="uploadImageForm" enctype="multipart/form-data">
+                            <input style="width: 100px; height: 40px; overflow: hidden; position: absolute; background-color:transparent; width: 100px; padding: 0 0 0 100px;" name="imagefile[]" type="file" id="takePictureField" accept="image/*" capture="camcorder" onchange="uploadPhotos('/scan.php',this.files[0])" />
+                            <div style="display: table-cell; height: 40px; width: 100px; font: 12px/100% Arial, Helvetica, sans-serif; vertical-align: middle; text-align: center; background-color: white; border-style: solid; color: black; -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box; border-radius: 5px; border:1px solid #000;">SCAN</div>
+                        </form>
+                    </div>
+                    <div style="display: inline; float:left;  display:inline; width: 5px; visibility: hidden;"><br/></div>
+                    <div style="display: inline; float:right; display:inline; width: 43%;">
+                        <div data-toggle="modal" href="#wherefindvin" style="display: table-cell; height:40px; width: 100px; font: 12px/100% Arial, Helvetica, sans-serif; vertical-align: middle; text-align: center; background-color: black;  color: white; -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box; border-radius: 5px;">HELP</div>
+                    </div>
+                    <div style="display: inline; float:left; text-align: left; display:inline; width: 4%; visibility: hidden;">
+                        <br/>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel2">Watch Takata Airbag Safety Recall Information</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+                <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">					
+					<iframe class="embed-responsive-item" width="1252" height="704" src="https://www.youtube.com/embed/akyWT6oz3Fc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+               </div>
+        </div>
+    </div>
+</div>
+
+<!-- Opt-In Modal -->
+<div class="modal fade" id="modalRecallOptin" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+				<h5 class="modal-title">Recall Opt-In Form</h5>
+                <button type="button" class="close" style="vertical-align: top;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>&nbsp;&nbsp;
+            </div>
+            <div class="modal-body">
+                <div class="optinPopupInfo">
+                <p>Enter your information below to receive recall updates about your vehicle via email. If at any point you decide you no longer wish to receive recall updates, you will be able unsubscribe from further notifications in the footer of the emails sent.</p>
+                </div>
+                <div id="optinResult">&nbsp;</div>
+                <div class="optinDivContainer">
+                    <form method="POST" onsubmit="return postOptins();">
+                            <div class="optinDiv">
+                                <label id="optinVinLabel" class="optinInputLabel">VIN</label>
+                                <input type="text" name="optinVin" id="optinVin" size="30" />
+                            </div>
+                            <div class="optinDiv">
+                            <label id="firstNameLabel" class="optinInputLabel">First Name</label>
+                            <input type="text" name="firstName" id="firstName" size="30" />
+                            </div>
+                            <div class="optinDiv">
+                            <label id="lastNameLabel" class="optinInputLabel">Last Name</label>
+                            <input type="text" name="lastName"  id="lastName" size="30" />
+                            </div>
+                            <div class="optinDiv">
+                            <label id="optinEmailLabel" class="optinInputLabel">Email</label>
+                            <input type="text" name="optinEmail" id="optinEmail" size="30"/>
+                            </div>
+                            <div class="optinDiv">
+                            <label id="optinConfirmedEmailLabel" class="optinInputLabel">Confirm Email</label>
+                            <input type="text" name="optinConfirmedEmail" id="optinConfirmedEmail" size="30" />
+                            </div>
+                            <div style="border-top: 1px solid #e5e5e5;">&nbsp;</div>
+                            <div class="optinButtonContainer">
+                                <button type="submit" id="optinButton" class="mazda-btn btn-black">Submit</button>
+                            </div>
+                            <div style="text-align: center; width: 100%;">
+                                <a id="optinSearchResult" onclick="optinViewResult()" class="btn button optinButtonHide hide">View Recall Results</a>
+                            </div>
+                        </form>
+                </div>
+            </div>
+            <br />
+        </div>
+    </div>
+</div>
+
+<!-- MODALS END -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mazda-recall.js"></script>
+
+</body>
+</html>

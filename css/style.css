@@ -1,0 +1,1816 @@
+/* ------- RESETS START ------- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* ------- RESETS END ------- */
+
+
+/* ------- HELPER STYLES START ------- */
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+	text-decoration:none;
+	color: #9c9b9b;
+}
+
+a[href^=tel], a[href^=sms] {
+    white-space: nowrap;
+	color: #9c9b9b;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+html, body {
+    font-weight: 400;
+    color: #939598;
+    line-height: 1.4;
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+}
+
+p {color:#101010;
+}
+
+p strong {
+    font-family: "MazdaType-Bold",Verdana,Arial,Helvetica,sans-serif !important;
+	font-weight:800;
+}
+
+.h-rule {
+    border-bottom: 1px solid #939598;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 24px;
+    color: #101010;
+    font-family: "MazdaType-Bold",Verdana,Arial,Helvetica,sans-serif !important;
+	letter-spacing:3px;
+	text-transform:uppercase;
+}
+
+h3 {
+    color: #101010;
+    font-family: "MazdaType-Bold",Verdana,Arial,Helvetica,sans-serif !important;
+	letter-spacing:1px;
+	text-transform:uppercase;
+}
+
+h4 {
+    font-size: 15px;
+    color: #101010;
+    font-family: "MazdaType-Bold",Verdana,Arial,Helvetica,sans-serif !important;
+}
+
+.small {
+    font-size: 14px;
+}
+
+body {
+   
+}
+
+.mazda-btn {
+    font-size: 12px;
+	line-height:12px;
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+	border-radius:3px;
+	padding:12px 25px 10px 25px;
+	margin:20px 0 30px 10px;
+	color:#fff;
+	text-transform:uppercase;
+	
+}
+
+.btn-ltGray {
+	color:#101010;
+	background:#999999;
+    transition: background .5s ease;
+}
+
+a:hover.btn-ltGray, button:hover.btn-ltGray {
+	color:#101010;
+	background:#fff;
+	transition: background 0.5s ease;
+}
+
+.btn-black {
+	color:#fff;
+	background:#101010;
+	transition: background 1s ease;
+}
+
+a:hover.btn-black, button:hover.btn-black {
+	color:#fff;
+    background-color:#999999;
+	transition: background 0.5s ease;
+}
+
+
+.btn-white {
+	color:#101010;
+	background:#fff;
+}
+
+a:hover.btn-white, a:focus.btn-white, a:active.btn-white {color:#000;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+.container-fluid {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+input[type="text"] {border:1px solid #999;padding-left:10px;}
+
+.plusMinus {color:#992927;}
+
+.question, .abFaq {
+	
+	float:left;
+	text-align:left;
+	width:100%;
+	font-family: 'MazdaType-Bold',Verdana,Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+	text-decoration:underline;
+	cursor:pointer;
+	color:#101010;
+	margin-bottom:10px;
+}
+
+.abFaq a,
+.abFaq a:hover,
+.abFaq a:active,
+.abFaq a:visited,
+a.faqPanel,
+a.faqPanel:hover,
+a.faqPanel:active,
+a.faqPanel:visited
+ {
+	color:inherit;
+	}
+
+.questionFixed {
+	margin-bottom:10px;	
+}
+
+.answer {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.answer, .answerFixed {
+	text-align:left;
+	padding:0 0 10px 20px;
+}
+
+.answer p {
+	font-size:14px;
+	}
+
+.answer ul, .answer ol {
+	font-size:14px;
+	color:#101010;
+	padding-left:20px;
+	margin-bottom:10px;
+}
+
+a .returnTop {
+	text-align:center;
+	text-transform:uppercase;
+	font-size:12px;
+	float:right;
+	padding-bottom:40px;
+	color:#000;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -170px;
+    visibility: hidden;
+}
+
+.faqPlus:after {content:"\00a0+";color:#992927;}
+
+.faqMinus:after {content:"\00a0-";color:#992927;}
+
+.hide {display:none;transition:all 1s;}
+
+/* ------- HELPER STYLES END ------- */
+
+
+/* ------- TYPOGRAPHY START ------- */
+
+ @font-face {
+     font-family: MazdaType-Regular;
+     src: url('../fonts/MazdaType/MazdaType-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: MazdaType-Bold;
+     src: url('../fonts/MazdaType/MazdaType-Bold.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ /* ------- TYPOGRAPHY END ------- */
+
+
+/* ------- NAV ELEMENTS START ------- */
+
+.mobileMenu {display:none;}
+
+.nav-wrapper {
+    width: 100%;
+	background:#2b2b2b;
+	padding:10px 0;
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+	}
+	
+.nav-wrapper .hamburgerMenu {display:none;}
+	
+nav ul {
+    list-style: none;
+	margin:24px 0 0 0;
+}
+
+nav ul.header-list a {
+	color:#d5d5d5;
+}
+
+nav ul.header-list a:hover {
+	color:#fff;
+	transition: color 0.5s ease;
+}
+
+.header-list-item {
+    display: inline-block;
+    padding-left: 19px;
+}
+
+.header-list-item:first-child {
+	padding-left:0;
+}
+
+.header-list li {
+	font-size:13px;
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+	letter-spacing:1px;
+}
+
+.header-title {
+    font-size: 11px;
+	letter-spacing:2px;
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+    color:#999;
+	display:inline-block;
+	margin:20px 0 0 0;
+	padding: 0 0 20px 0;
+}
+
+.header-title i {
+	font-size: 18px;
+
+}
+
+.header-title a {
+	color:inherit;
+}
+
+.header-title a:hover {
+	color:#fff;
+	transition: color 0.5s ease;
+}
+
+.header-title .fa {margin-right:10px;}
+
+
+.header {
+    padding: 10px 0;
+}
+.header img {
+   float:left;
+    margin-right: 20px;
+}
+
+/* ------- NAV ELEMENTS END ------- */
+
+
+/* ------- HERO ELEMENTS START ------- */
+
+header.masthead {
+	margin-top:140px;
+    text-align: center;
+    color: #fff;
+    background-image: url(../img/hero-bkgd.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.intro-text {padding:8% 0;}
+
+header.masthead .intro-text h1 {
+	font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    font-family: 'MazdaType-Bold',Verdana,Arial,Helvetica,sans-serif;
+    letter-spacing: 8px;
+}
+
+.intro-text h4 {
+	color:#fff;
+}
+
+.checkRecalls {
+	display:none;
+}
+
+/* ------- HERO ELEMENTS END ------- */
+
+/* ------- VIN CHECK 1 START ------- */
+
+#Vin-Check-1 {
+	padding:20px 0;
+	text-align:center;
+}
+
+#Vin-Check-1 p {
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+	color:#fff;
+	 font-size:12px;
+	 line-height:15px;
+	 padding:10px 0 0 0;
+	 margin:0 auto;
+}
+
+#Vin-Check-1 .btn-scan, #Vin-Check-2 .btn-scan {display:none;}
+
+#Vin-Check-1 .vinLookupBlock, #Vin-Check-2 .vinLookupBlock  {
+	padding:20px 0 10px 0;
+	width:75%;
+	margin:0 auto;
+}
+
+#Vin-Check-1 input, #Vin-Check-2 input {
+	height:35px;
+	width:40%;
+}
+
+#Vin-Check-1 select.recall-select, #Vin-Check-2 select.recall-select {
+	height:35px;
+	-webkit-border-radius: 0;
+    border: 0;
+	outline: 1px solid #999;
+    outline-offset: -1px;
+	margin-left:10px;
+	width:20%;
+}
+
+#Vin-Check-1 a.findVin, #Vin-Check-2 a.findVin {
+	display:block;
+	text-align:left;
+	font-size:13px;
+	margin:10px 0 0 25px;
+	text-decoration:underline;
+}
+
+#Vin-Check-1 a.findVin {color:#fff;}
+#Vin-Check-2 a.findVin {color:#101010;}
+
+#Vin-Check-2 .mazda-btn {
+    font-size: 12px;
+	line-height:12px;
+	border-radius:3px;
+	padding:12px 30px 10px 30px;
+	margin:0 0 0 10px;
+	color:#fff;
+	text-transform:uppercase;
+	
+}
+
+#error1, #error2 {
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	text-transform:uppercase;
+	color:red;
+	text-align:center;
+	padding:5px 0 0 0;	
+}
+
+
+/* ------- VIN CHECK 1 END ------- */
+
+
+/* ------- VIN CHECK 2 START ------- */
+
+#Vin-Check-2 {
+	padding:60px 0 0 0;
+	border-top:1px solid #000;
+    text-align:center;
+
+	}
+
+#Vin-Check-2 h2 {
+	margin-bottom:10px;
+}
+
+#Vin-Check-2 h3 {
+	margin-bottom:30px;
+}
+
+#Vin-Check-2 .btn-red {
+	margin-left:0;
+}
+
+#Vin-Check-2 table {
+	
+	margin:40px 0;
+	text-align:left;
+	color:#101010;	
+}
+
+#Vin-Check-2 table th {
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+}
+
+#Vin-Check-2 table th, #Vin-Check-2 table td {
+	padding:3px;
+	height:auto;
+}
+
+#Vin-Check-2 table td.border, #airbagFAQs table td.border {
+	height:2px;
+	border-bottom:2px solid #101010;	
+}
+
+#Vin-Check-2 table p {
+	margin-top:7px;
+}
+
+#Vin-Check-2 #vinFaq {float:left;padding: 30px 0;}
+
+
+#Vin-Check-2 #searchAnother {
+	padding:30px 0;
+	Background-color:#f5f5f5;
+	border-top:1px solid #ccc;
+}
+
+/* ------- VIN CHECK 2 END ------- */
+
+/* ------- SAFETY MATTERS START ------- */
+
+#safetyMatters .drivingMatters, #safetyMatters .affectedVehicles {float:left;}
+
+#safetyMatters h2 {
+	font-size:23px;
+	letter-spacing:2px;
+	padding-bottom:30px;
+}
+
+#safetyMatters .drivingMatters {
+	margin:60px 0;
+	padding-right:40px;
+}
+
+#safetyMatters .drivingMatters p {
+	font-size:16px;
+	line-height:28px;
+	padding-bottom:30px;
+}
+
+#safetyMatters .drivingMatters .mazda-btn {
+	display:inline-block;
+	margin:10px 0 0 0;
+}
+
+#safetyMatters .drivingMatters a.textLink {
+	color:#910a2d;
+	text-decoration:underline;
+}
+
+#safetyMatters .affectedVehicles {
+	margin:60px 0;
+	text-align:left;
+	padding-left:40px;
+	border-left:1px solid #ccc;
+}
+
+#safetyMatters .affectedVehicles h3 {
+	padding-bottom:20px;
+}
+ 
+
+#safetyMatters .affectedVehicles table {
+	margin:10px 0 0 0;
+	color:#101010;
+	font-size:90%;
+	text-transform:uppercase;
+}
+
+#safetyMatters .affectedVehicles table th {
+    font-family: 'MazdaType-Bold',Verdana,Arial,Helvetica,sans-serif;
+}
+
+#safetyMatters .affectedVehicles table td {
+	
+	padding:14px 30px 0 0;
+	
+}
+
+#safetyMatters .affectedVehicles table td.border {padding-top:0;}
+
+/* ------- SAFETY MATTERS END ------- */
+
+
+/* ------- RECALL ACTION PLAN START ------- */
+
+#recallActionPlan {
+	border-top: 1px solid #ccc;
+	padding:40px 0;
+}
+
+#recallActionPlan table {
+	color:#101010;
+	margin-left:40px;
+}
+
+.rapToggle {display:none;}
+
+.rapClose {color:#999;}
+.rapClose:hover {color:#000;}
+
+
+/* ------- RECALL ACTION PLAN END ------- */
+
+
+/* ------- VIDEO START ------- */
+
+#vidBkgd {
+	width:100%;
+	background: url('../img/mf-large-2.png');
+	background-position: 20% 0;
+	background-repeat: no-repeat;
+	background-color:#231a11;
+    height:auto;
+	}
+
+@media screen and (max-width: 1799px) {
+	#vidBkgd {
+		background-position: 10% 0;
+	}
+}
+
+@media screen and (max-width: 1599px) {
+	#vidBkgd {
+		background-position: 0 0;
+	}
+}
+
+@media screen and (max-width: 1399px) {
+	#vidBkgd {
+		background-position: -20% 0;
+	}
+}
+
+@media screen and (max-width: 1299px) {
+	#vidBkgd {
+		background-position: -50% 0;
+	}
+}
+	
+#airbagVideo {
+	width:100%;
+	text-align:center;
+	padding: 50px 0;
+}
+
+#vidBkgd .pleaseWatch {
+	float:right;
+}
+
+#vidBkgd .watchGroup {
+	padding:10% 0;
+}
+
+#vidBkgd h2 {
+	color:#fff;
+	padding:30px 0;
+}
+
+#vidBkgd p {
+	color:#fff;
+	padding:0 0 7px 0;
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+	line-height:2;
+}
+
+#vidBkgd .oneEighty {transform: rotate(180deg);display:inline-block;}
+
+
+#vidBkgd .watchNow {
+	text-transform:uppercase;
+	font-size:14px;
+	color:#999;
+}
+
+#videoModal .modal-dialog {max-width:90%;}
+	
+/* ------- VIDEO END ------- */
+
+
+/* ------- FAQs START ------- */
+
+#safetyMattersWrapper {background-color:#f2f2f2;}
+
+#faqWrapper {
+	background-color:#f2f2f2;
+	border-bottom:1px solid #ccc;
+}
+
+#airbagFAQs {
+	text-align:center;
+	padding:30px 15px 20px 15px;
+	float:left;
+}
+
+#airbagFAQs h2 {
+	padding:20px 0;
+}
+
+#airbagFAQs .faqCategories, #airbagFAQs .affectedVehicles {
+	float:left;
+	margin:20px 0;
+}
+
+#airbagFAQs .affectedVehicles {
+	text-align:left;
+	padding-left:50px;
+	border-left:1px solid #ccc;
+}
+
+#airbagFAQs .affectedVehicles table {
+	margin:10px 0 0 0;
+	color:#101010;
+	font-size:90%;
+}
+
+#airbagFAQs .affectedVehicles table th {
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+	text-transform:uppercase;
+
+}
+
+#airbagFAQs .affectedVehicles table td {
+	padding:10px 15px 0 0;
+}
+
+#airbagFAQs .affectedVehicles table td.border {padding-top:0;}
+
+
+/* ------- FAQs END ------- */
+
+
+/* ------- FAQ CATEGORIES START ------- */
+
+
+#RECALL-INFO,
+#ABOUT-RECALL,
+#VEHICLE-REPAIR,
+#PARTS-AVAIL,
+#CUSTOMER-NOTIFICATION,
+#MORE-INFO {
+	padding:40px 15px;
+	border-top:1px solid #ccc;	
+}
+
+#RECALL-INFO .hide {	transition: all 1s ease;
+}
+
+#faqPanels h4 {
+	text-transform:uppercase;
+	margin-bottom:20px;
+	cursor:pointer;
+}
+
+#faqPanels .question, 
+#faqPanels .questionFixed {
+	Text-transform:none;
+	color:#101010;
+}
+
+#faqPanels p {
+    font-size:14px;
+	margin-bottom:10px;
+	
+}
+
+table.partsavailabletable {
+	color:#101010;
+	font-size:14px;
+	width:100%;
+}
+
+table.partsavailabletable th.head {
+    font-family: 'MazdaType-Bold',Verdana,Arial,Helvetica,sans-serif;
+	text-align:left;
+	text-transform:uppercase;
+	padding-top:20px;
+}
+
+table.partsavailabletable th.subhead {
+    font-family: 'MazdaType-Bold',Verdana,Arial,Helvetica,sans-serif;
+	border-bottom:1px solid #000;
+}
+
+table.partsavailabletable th, table.partsavailabletable td {
+	text-align:center;
+	padding:5px;
+	width:33%;
+}
+
+/* ------- FAQ CATEGORIES END ------- */
+
+
+/* ------- DEALER INFO START ------- */
+
+#dealerInfo {
+	padding:60px 0 20px 0;
+}
+
+#dealerInfo #recallNotifications {
+    padding-left: 50px;
+    border-left: 1px solid #ccc;
+}
+
+#dealerInfo #recallNotifications.col-lg-5 {
+	padding-right:0;
+}
+
+#dealerInfo a.differentDealer {
+	font-size:13px;
+	color:#000;
+	text-decoration:underline;
+	display:block;
+	margin:5px 0 30px 0;
+}
+
+#dealerInfo .dealerCol1, #dealerInfo .dealerCol2 {float:left;}
+
+#dealerInfo .col-sm-5 {padding-right:0;}
+
+#dealerInfo #authorizedDealer, #dealerInfo #recallNotifications {
+	float:left;
+}
+
+#dealerInfo #authorizedDealer p {
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+	font-size:14px;
+	text-transform:uppercase;
+	margin-bottom:5px;
+	letter-spacing:1px;
+}
+
+#dealerInfo #authorizedDealer p.dealerName {
+	display:block;
+	margin:0 0 10px 0;
+}
+
+#dealerInfo .dealerCol1 i {
+	padding:0 10px 0 0;
+}
+
+#dealerInfo .dealerCol1 td {
+	padding-bottom:20px;
+}
+
+#dealerInfo table a {
+	color:#555;
+	text-decoration:underline;
+}
+
+#dealerInfo .dealerCol2 {
+	margin: 3px 0 0 40px;
+}
+
+#dealerInfo .dealerCol2 .mazda-btn,
+#dealerInfo #recallNotifications .mazda-btn {
+	display:inline-block;
+	margin:26px 0 0 0;
+	width:190px;
+	text-align:center;
+}
+
+#dealerInfo #recallNotifications h2 {
+	padding-bottom:10px;
+	margin-bottom:15px;
+}
+
+#dealerInfo #recallNotifications p {
+	font-size:14px;
+	line-height:2.1;
+}
+
+#dealerInfo .returnTop {
+	margin-top:30px;
+	padding-bottom:10px;
+	}
+
+.errorlabel {
+display:inline;
+/* color: #FF9900; */
+font-family: Helvetica;
+font-size: 14px;
+font-weight: bold;
+line-height: 18px;
+}
+
+.err {
+color: white;
+background-color: red;
+}
+
+.optinViewResult {
+border: 0px;
+width: 200px;
+background-image: url(../img/line_1x39.jpg);
+color: white;
+display: visible;
+}
+
+.optinSubmit {
+border: 0px;
+width: 150px;
+background-image: url(../img/line_1x39.jpg);
+color: white;
+}
+
+#optinResult {
+	text-align:center;
+}
+
+.optinClickButtonHide {
+display: none;
+}
+
+#optinToReceiveRecallNotice {
+    color: red;
+    font-style:normal;
+    text-decoration:underline;
+}
+
+.optinInputLabel
+{	
+ width: 35%;
+ text-align: right;
+ padding-right: 10px;
+ white-space:nowrap;
+}
+
+.optinDiv
+{
+    width: 100%;
+    padding: 10px;
+}
+
+.optinDivContainer
+{
+    height: 70%;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+
+.optinButtonContainer
+{
+    text-align: center;
+    width: 100%;
+}
+
+.optinPopupInfo{
+    text-align: center;
+}
+
+/* styled for small viewports */
+@media screen and (max-width: 640px) {
+.optinInputLabel{
+     width: 35%;
+    text-align: left;
+    padding-right: 10px;
+    white-space: nowrap;
+ }
+
+.optinButtonContainer{
+    text-align: center;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.optinDiv{
+    width: 100%;
+    padding: 10px;
+    padding-left: 15px;
+}
+}
+
+/* ------- DEALER INFO END ------- */
+
+
+/* ------- FOOTER START ------- */
+
+#footer {
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+	padding:0 0 40px 0;
+	background-color:#101010;
+    color: #fff;
+}
+#footer a {
+    color: #d5d5d5;
+}
+
+#footer a:hover, #footer a:active, #footer a:focus {
+	color:#fff;
+	text-decoration:none;
+	transition: color 0.5s ease;
+}
+
+#footer .footerLinkRow {
+	text-align:center;
+	border-bottom:1px solid #666;
+	margin-bottom:30px;	
+} 
+
+#footer .footerLinkRow ul {
+    list-style: none;
+    padding: 39px 0;
+}
+#footer .footerLinkRow ul li {
+    display: inline-block;
+	font-size:14px;
+}
+#footer .footerLinkRow ul li a {
+    padding: 10px 20px;
+}
+
+#footer .disclaimerArea,
+#footer .copyrightArea {
+	text-transform:uppercase;
+	font-size:11px;
+	letter-spacing:2px;
+	width:auto;
+	color:#ccc;
+}
+
+#footer .plusMinus {color:#ccc;}
+
+#footer .disclaimerArea {float:left;}
+
+#footer .copyrightArea {float:right;}
+
+#footer .question {
+	text-decoration:none;
+	width:auto;
+	float:none;
+	color:#d5d5d5;
+	}
+	
+#footer .question:hover {
+	color:#fff;
+	transition: color 0.5s ease;
+}
+
+#footer .question, #footer .answer p { 
+	font-size:11px;
+	}
+
+#footer .answer p  {
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+	margin-bottom:10px;
+	color:#fff;
+	}
+
+/* ------- FOOTER END ------- */
+
+
+/* ------- MODALS START ------- */
+
+.modal button.mazda-btn {margin:10px 0;}
+
+.modal .img-fluid {margin:10px 0;}
+
+.modal ul {color:#101010;padding-left:20px;}
+
+.modal-dialog {
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+}
+.modal-header {
+  background-color: #222222;
+}
+.modal-title {
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+  color: #ffffff;
+}
+
+.close {
+  color: #ffffff;
+  font: bold 28px/100% Arial;
+  opacity: .5;
+}
+.close:hover {
+  color: #ffffff;
+  opacity: 1;
+}
+.modal-footer.btn-primary {
+  color: #ffffff;
+  background-color: #d00000;
+  border: 1px solid red;
+}
+.modal-footer.btn-primary:hover {
+  color: #ffffff;
+  background: #febf01;
+}
+
+.OverSoftDisplayLimit {
+  display: none;
+}
+
+.ShowMore {
+  text-align: right;
+}
+
+#myvinmodal div.modal-body {
+  text-align: center;
+}
+
+#myvinmodal div.modal-header {
+  background-color: transparent;
+}
+
+#myvinmodal div.modal-header button span {
+  color: grey;
+}
+
+#myvinmodal div.modal-body div:nth-child(1) {
+ margin-bottom:10px;
+ font-family: 'MazdaType-Bold',Verdana,Arial,Helvetica,sans-serif;
+ font-size:14px;
+/*letter-spacing: 3px;*/
+ color:#000000
+}
+
+#myvinmodal div.modal-body img {
+  max-height:230px;
+  max-width:370px
+}
+
+#myvinmodal div.modal-body div:nth-child(3) {
+  width:70%;
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+  font-size:13px;
+  line-height: 18pt;
+  color:#505050
+}
+
+/* ------- MODALS END ------- */
+
+
+@media (max-width: 1199px) {
+	
+/* ------- HERO START ------- */
+
+	.intro-text {
+		padding:7% 0 5% 0;
+	}
+		
+	.header img {
+	width:60%;
+	}	
+
+/* ------- HERO END ------- */
+
+	
+/* ------- VIDEO START ------- */
+	
+	#vidBkgd {
+	background-position: -100% 0;
+	background-size:80%;
+	}
+	
+	#vidBkgd .watchGroup {
+    padding: 5% 0;
+}
+	
+/* ------- VIDEO END ------- */
+
+
+/* ------- DEALER INFO START ------- */
+
+#dealerInfo .dealerCol2 {
+    margin-left: 20px;
+}
+
+/* ------- DEALER INFO END ------- */
+
+}
+
+@media (max-width: 1124px) {
+	
+	/* ------- VIDEO START ------- */
+
+	#vidBkgd {
+	background-position: -200px 0;
+	}
+	
+	/* ------- VIDEO END ------- */
+
+}
+
+@media (max-width: 1024px) {
+	
+	/* ------- VIDEO START ------- */
+
+	#vidBkgd {
+	background-position: -170px 0;
+	background-size:70%;
+	}
+	
+	#vidBkgd .watchGroup {
+    padding: 2% 0;
+	}
+	
+	/* ------- VIDEO END ------- */
+
+	
+}
+
+
+@media (max-width: 991px) {
+
+/* ------- HELPER STYLES START ------- */
+	
+	a.anchor {
+    top: -100px;
+}
+
+/* ------- HELPER STYLES END ------- */
+	
+	
+/* ------- HEADER START ------- */
+	
+	header.masthead {
+		margin-top:100px;
+	}
+/* ------- HEADER END ------- */
+
+	
+/* ------- NAV START ------- */	
+	
+.nav-wrapper .bigLogo {display:none;}
+.nav-wrapper .smallLogo {display:inline-block;width:170px;}	
+.nav-wrapper .hamburgerMenu {
+	display:inline-block;
+	color:#d5d5d5;
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+	margin: 1em 0 0 0;
+	font-size:18px;
+	cursor:pointer;	
+	}
+	
+.nav-wrapper .header-title {padding:20px 0;}
+
+.nav-wrapper .hamburgerMenu:hover {color:#fff; transition: color 0.5 ease;}
+	
+.nav-wrapper .hamburgerMenu .menuText {font-size:50%;letter-spacing:2px;vertical-align:middle;}
+
+.menuContents{display:none;}
+
+.mobileMenu {
+	text-align:center;
+	width: 100%;
+	background:#fff;
+	padding:10px;
+	position: fixed;
+    top: 120px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+	border-bottom:2px solid #c2c2c2;
+	}
+	
+.mobileMenu ul.header-list a {
+	color:#898989;
+	text-transform:uppercase;
+	}
+	
+.mobileMenu .dealerLoc {color:#101010;}
+	
+.mobileMenu .header-title, .mobileMenu .header-list-item {
+	display:block;	
+}
+
+.mobileMenu .mazda-btn {display:inline-block;}
+
+.mobileMenu .header-list {margin:0;}
+
+.mobileMenu .header-list-item {
+	padding:20px 0;
+	border-top:1px solid #999;
+	
+}
+
+/* ------- NAV END ------- */
+
+
+/* ------- VIN CHECK 1 START ------- */
+
+#Vin-Check-1 .btn-scan, #Vin-Check-2 .btn-scan, .modal-content .btn-scan {
+	display:inline-block;
+	color:#fff;
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+	border:1px solid #fff;
+	padding:12px 40px 10px 40px;
+	margin:20px 0 10px 0;
+
+}
+
+/* ------- VIN CHECK 1 END ------- */
+
+
+/* ------- VIDEO START ------- */
+	
+	#vidBkgd {
+	background-position: -190px 0;
+	background-size:70%;
+	}
+	
+	#vidBkgd .watchGroup {
+    padding: 2% 0;
+	}
+	
+/* ------- VIDEO END ------- */
+
+}
+
+
+@media (max-width: 768px) {
+		
+h2 {
+	font-size:18px;
+	line-height:24px;
+}
+
+/* ------- HERO ELEMENTS START ------- */
+	
+header.masthead {
+    margin-top: 90px;
+}
+
+header.masthead .intro-text h1 {
+	font-size: 21px;
+    line-height: 24px;
+	margin-top: 1%;
+    margin-bottom: 1%;
+}
+	
+.intro-text {
+    padding: 4% 0 2% 0;
+}
+
+/* ------- HERO ELEMENTS END ------- */
+	
+.mobileMenu {
+		top:100px;
+	}	
+
+
+/* ------- VIN CHECK 1 START ------- */
+
+#Vin-Check-1, #Vin-Check-2 {
+	padding:30px 0 20px 0;
+}
+
+#Vin-Check-1 p {
+	 padding:10px 0;
+}
+
+#Vin-Check-1 .vinLookupBlock, #Vin-Check-2 .vinLookupBlock {
+	padding:20px 0 10px 0;
+	width:100%;
+	margin:0 auto;
+}
+	
+#Vin-Check-1 .mazda-btn.btn-scan, #Vin-Check-2 .mazda-btn.btn-scan {
+	width:auto;
+	display:inline-block;
+	margin:20px auto 0 auto
+	}
+	
+	#Vin-Check-2 .mazda-btn.btn-scan {
+	border:1px solid #101010;
+	color:#101010;
+	}
+	
+	#Vin-Check-1 a.findVin, #Vin-Check-2 a.findVin {
+	text-align:center;
+	margin:20px 0 0 0;
+}
+
+.checkRecalls {
+	display:block;
+	padding-bottom:10px;
+	font-size:12px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+
+/* ------- VIN CHECK 1 END ------- */
+
+
+/* ------- VIN CHECK 2 START ------- */
+
+#Vin-Check-2 table p {font-size:80%;}
+
+#Vin-Check-2 #vinFaq {float:left;padding: 10px 0;}
+
+#Vin-Check-2 #vinFaq .question {
+	
+	float:left;
+	text-align:left;
+	width:100%;
+    font-family: 'MazdaType-Bold',Verdana,Arial,Helvetica,sans-serif;
+	text-transform:uppercase;
+	text-decoration:underline;
+	cursor:pointer;
+	color:#101010;
+	margin-bottom:10px;
+}
+
+#Vin-Check-2 #searchAnother {
+	padding:20px 0 0 0;
+	Background-color:#fff;
+	border-bottom:1px solid #ccc;
+}
+
+/* ------- VIN CHECK 2 END ------- */
+
+
+/* ------- VIDEO START ------- */
+	
+#airbagVideo {
+   padding:20px 0;
+}
+
+#vidBkgd {
+	background-position: -120px 0;
+	background-size:70%;
+	}
+	
+	#vidBkgd .watchGroup {
+    padding: 2% 0;
+	}
+	
+#vidBkgd h2 {
+    padding: 10px 0 30px 0;
+}
+
+	
+/* ------- VIDEO END ------- */
+
+
+/* ------- DEALER AREA START ------- */
+#dealerInfo #recallNotifications {border:none;}
+	
+#dealerInfo .dealerCol2 {
+    margin: 10px 0 0 0;
+}
+
+/* ------- DEALER AREA END ------- */
+
+
+/* .navigation-menu:hover .navigation-sub-menu {
+    display: block;
+} */
+.footer .footer-links .footer-vw-links {
+    padding-bottom: 15px !important;
+}
+.footer .footer-links .footer-social-media {
+    text-align: left !important;
+    padding-bottom: 40px;
+    padding-top: 0;
+	margin-left:14px;
+}
+
+#dealerInfo #recallNotifications {
+	float:left;
+	padding:0 0 20px 0;
+	}
+
+}
+
+@media (max-width: 529px) {
+	
+.header img {
+    width: 100%;
+}
+	
+/* ------- VIDEO START ------- */
+	
+.fullscreen {display:none;}
+
+#vidBkgd {
+	width:100%;
+	background: url('../img/mf-small.png');
+	background-position: center top;
+	background-color:#231a11;
+	background-size: 80%;
+	background-repeat:no-repeat;
+	}
+	
+#airbagVideo {
+	width:100%;
+	text-align:center;
+	padding: 50px 0 20px 0;
+}
+
+#vidBkgd .pleaseWatch {
+	float:none;
+}
+
+#vidBkgd .watchGroup {
+	padding:50% 10% 0% 10%;
+}
+
+#vidBkgd h2 {
+	font-size: 18px;
+    line-height: 22px;
+	color:#fff;
+	padding:30px 0;
+}
+
+#vidBkgd p {
+	color:#fff;
+	padding:0 0 7px 0;
+    font-family: 'MazdaType-Regular',Verdana,Arial,Helvetica,sans-serif;
+	line-height:2;
+}
+
+#vidBkgd .oneEighty {transform: rotate(180deg);display:inline-block;}
+
+
+#vidBkgd .watchNow {
+	text-transform:uppercase;
+	font-size:14px;
+	color:#999;
+}
+	
+/* ------- VIDEO END ------- */
+
+/* ------- FOOTER START ------- */
+
+#footer .footerLinkRow {
+	text-align:center;
+	border-bottom:none;
+	margin-bottom:30px;	
+} 
+
+#footer .footerLinkRow ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer .footerLinkRow ul li {
+    display: block;
+	padding:20px 0;
+	border-bottom:1px solid #666;
+}
+
+#footer .copyrightArea {margin:20px 0;}
+
+
+
+/* ------- FOOTER END ------- */	
+	
+}
+
+@media (max-width: 414px) {
+	
+.mobileMenu {
+	top:90px;
+}	
+	
+#safetyMatters .drivingMatters {
+    padding-right: 15px;
+	}
+	
+.mazda-btn, #dealerInfo .dealerCol2 .mazda-btn, #dealerInfo #recallNotifications .mazda-btn {
+	width:100%;
+	text-align:center;
+	font-size:11px;
+	margin:20px 0;
+	}
+	
+	#safetyMatters .affectedVehicles {
+    margin: 0 0 40px 0;
+    text-align: left;
+    padding-left: 20px;
+    border-left: none;	
+	}
+	
+	#recallActionPlan table {margin-left:15px;}
+
+	#airbagFAQs {
+    padding: 30px 0 20px 0;
+	}
+	
+/* ------- VIN CHECK 1 START ------- */
+
+#Vin-Check-1, #Vin-Check-2 {
+	padding:30px 0 20px 0;
+}
+
+#Vin-Check-1 p {
+	 padding:10px 0;
+}
+
+#Vin-Check-1 .vinLookupBlock, #Vin-Check-2 .vinLookupBlock {
+	padding:20px 0 10px 0;
+	width:100%;
+	margin:0 auto;
+}
+
+ #Vin-Check-1 input, #Vin-Check-2 input {
+	height:34px;
+	width:96%;
+	display:block;
+	margin:0 auto 20px auto;
+}
+	
+#Vin-Check-1 select.recall-select, #Vin-Check-2 select.recall-select {
+	height:34px;
+	width:96%;
+	display:block;
+	margin:20px auto;
+}
+
+#Vin-Check-1 .mazda-btn, #Vin-Check-2 .mazda-btn {
+	width:96%;
+	display:block;
+	margin:0 auto 20px auto
+	}
+	
+	
+#Vin-Check-1 .mazda-btn.btn-scan, #Vin-Check-2 .mazda-btn.btn-scan {
+	width:auto;
+	display:inline-block;
+	margin:20px auto 0 auto
+	}
+	
+	#Vin-Check-2 .mazda-btn.btn-scan {
+	border:1px solid #101010;
+	color:#101010;
+	}
+	
+	#Vin-Check-1 a.findVin, #Vin-Check-2 a.findVin {
+	text-align:center;
+	margin:10px 0 0 0;
+}
+
+.checkRecalls {
+	display:block;
+	padding-bottom:10px;
+	font-size:12px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+
+/* ------- VIN CHECK 1 END ------- */
+
+/* ------- VIN CHECK 2 START ------- */
+
+#Vin-Check-2 table p {font-size:80%;}
+
+#Vin-Check-2 #vinFaq {float:left;padding: 10px 0;}
+
+#Vin-Check-2 #vinFaq .question {
+	
+	float:left;
+	text-align:left;
+	width:100%;
+    font-family: 'MazdaType-Bold',Verdana,Arial,Helvetica,sans-serif;
+	text-transform:uppercase;
+	text-decoration:underline;
+	cursor:pointer;
+	color:#101010;
+	margin-bottom:10px;
+}
+
+#Vin-Check-2 #searchAnother {
+	padding:20px 0 0 0;
+	Background-color:#fff;
+	border-bottom:1px solid #ccc;
+}
+
+/* ------- VIN CHECK 2 END ------- */
+
+	
+/* ------- VIDEO START ------- */
+
+#vidBkgd {
+	background-size: 90%;
+	}
+	
+#airbagVideo {
+	padding: 60px 0 20px 0;
+}
+
+#vidBkgd .watchGroup {
+	padding:55% 10% 0% 10%;
+}
+
+#vidBkgd h2 {
+	font-size: 16px;
+    line-height: 20px;
+}
+	
+/* ------- VIDEO END ------- */	
+	
+	
+#dealerInfo #authorizedDealer {
+	padding:0 0 30px 0;
+	}
+	
+#dealerInfo #recallNotifications {
+    padding:40px 0 0 0;
+    border-top:1px solid #ccc;
+	}
+	
+#dealerInfo .dealerCol2 {
+	margin-left:0;
+	width:100%;
+}
+	
+#videoModal .modal-dialog {max-width:100%;}
+
+	
+}
+
+@media (max-width: 376px) {
+
+
+/* ------- VIDEO START ------- */
+
+#vidBkgd h2 {
+	padding:10px 0;
+	font-size: 14px;
+    line-height: 18px;
+}
+
+#airbagVideo .mazda-btn {
+	margin:40px 0 0 0;
+}
+
+	
+/* ------- VIDEO END ------- */
+
+
+/* ------- FAQs START ------- */
+
+#airbagFAQs .affectedVehicles {
+	padding-left:30px;
+	width:100%;
+}
+
+#airbagFAQs .affectedVehicles table {
+
+}
+
+
+/* ------- FAQs END ------- */
+
+
+/* ------- RECALL INFO START ------- */
+
+a .returnTop {padding-bottom:20px !important;}
+
+/* ------- RECALL INFO END ------- */
+
+
+/* ------- DEALER INFO START ------- */
+
+#dealerInfo {
+	padding:30px 0 20px 0;
+}
+
+#dealerInfo #recallNotifications {
+    padding-left: 0px;
+    border-left:none;
+}
+
+#dealerInfo #recallNotifications.col-sm-5 {
+	padding-right:0;
+}
+
+#dealerInfo .dealerCol1, #dealerInfo .dealerCol2 {float:left;}
+
+#dealerInfo #authorizedDealer.col-sm-7 {padding:0 0 40px 0;}
+
+#dealerInfo .returnTop {
+	margin-top:30px;
+	padding:0 0 0 10px;
+	
+	}
+	
+#dealerInfo #authorizedDealer {
+float:left;
+padding-bottom:40px;
+}
+
+#dealerInfo .dealerCol2 .mazda-btn,
+#dealerInfo #recallNotifications .mazda-btn {
+	display:block;
+	text-align:center;
+}
+
+#dealerInfo #recallNotifications {
+float:left;
+padding-top:40px;
+border-top:1px solid #ccc;
+}
+
+#dealerInfo #recallNotifications h2 {
+    padding-bottom: 0;
+    margin-bottom: 15px;
+    border-bottom: none;
+}
+
+.returnTop {
+	width:100%;
+	text-align:center;
+	padding:30px 0 0 0 !important;
+	margin: 0 !important;
+}
+
+/* ------- DEALER INFO END ------- */
+
+
+}
+
+@media (max-width: 321px) {
+	
+	#Vin-Check-2 table p {
+    font-size: 70%;
+}
+}
